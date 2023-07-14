@@ -26,8 +26,6 @@ ColorfulCircle::ColorfulCircle(QWidget *parent)
         : QWidget(parent)
 {
     setFixedSize(200, 250);
-
-    QVBoxLayout *layout = new QVBoxLayout(this);
 }
 
 void ColorfulCircle::paintEvent(QPaintEvent *event)
