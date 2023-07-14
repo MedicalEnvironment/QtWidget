@@ -28,13 +28,6 @@ ColorfulCircle::ColorfulCircle(QWidget *parent)
     setFixedSize(200, 250);
 
     QVBoxLayout *layout = new QVBoxLayout(this);
-
-    QSlider *slider = new QSlider(Qt::Horizontal);
-    slider->setRange(0, 100);
-
-    layout->addWidget(slider);  // Add the slider to the layout
-
-    connect(slider, &QSlider::valueChanged, this, &ColorfulCircle::setColor);
 }
 
 void ColorfulCircle::paintEvent(QPaintEvent *event)
